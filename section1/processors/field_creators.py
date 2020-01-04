@@ -2,7 +2,12 @@ import numpy as np
 
 
 def create_field_above_100(data):
-    # input: pandas dataframe
+    '''
+    input: pandas dataframe
+
+    This functions creates a new field 'above_100' that depicts whether the price is
+    above 100 or not.
+    '''
     data['above_100'] = np.nan
     for index, row in data.iterrows():
         value = row['price']

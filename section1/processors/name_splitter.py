@@ -8,8 +8,10 @@ import numpy as np
 
 
 def name_splitter(data):
-    # input: pandas dataframe
-    # This functions splits the name column into first and last name
+    '''
+    input: pandas dataframe
+    This functions splits the name column into first and last name
+    '''
 
     data['first_name'] = np.nan
     data['last_name'] = np.nan

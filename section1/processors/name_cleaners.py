@@ -4,12 +4,17 @@
 
 
 def remove_salutation(data):
-    # input: pandas dataframe
+    '''
+    input: pandas dataframe
+    '''
+
     data['name'].replace(r'(^\w{2,4}\. ?)', r'', regex=True, inplace=True)
 
 
 def remove_position(data):
-    # input: pandas dataframe
+    '''
+    input: pandas dataframe
+    '''
     data['name'].replace({
         'MD': '',
         'DDS': '',

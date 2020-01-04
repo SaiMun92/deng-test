@@ -1,7 +1,7 @@
 import pandas as pd
-from processors.name_splitter import name_splitter
-from processors.name_cleaners import *
-from processors.field_creators import create_field_above_100
+from section1.processors.name_splitter import name_splitter
+from section1.processors.name_cleaners import *
+from section1.processors.field_creators import create_field_above_100
 import schedule
 import time
 from datetime import datetime

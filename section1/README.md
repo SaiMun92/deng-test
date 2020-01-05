@@ -7,4 +7,5 @@
 ## Assumptions Made
 1. Western names follow a format like so: "First Name " " Last Name
 2. Leave Jr., II, III in the Last Name
+3. Input file is to be named as "dataset.csv"
 

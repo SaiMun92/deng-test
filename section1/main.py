@@ -1,7 +1,7 @@
 import pandas as pd
-from section1.processors.name_splitter import name_splitter
-from section1.processors.name_cleaners import *
-from section1.processors.field_creators import create_field_above_100
+from processors.name_splitter import name_splitter
+from processors.name_cleaners import *
+from processors.field_creators import create_field_above_100
 import schedule
 import time
 from datetime import datetime
@@ -35,6 +35,7 @@ def main():
 
 
 # Run the job everyday at 1:01am
+print("Software will run at 1:01 am ... ")
 schedule.every().day.at("01:01").do(main)
 
 while True:
